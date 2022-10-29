@@ -3,7 +3,9 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <header>
-      <Link href="/" className="logo">sasha stafford</Link>
+      <Link href="/">
+        <span className="drop-shadow-md text-Josefin text-lime-400">sasha stafford</span>
+      </Link>
       <input
         className="side-menu"
         type="checkbox"
