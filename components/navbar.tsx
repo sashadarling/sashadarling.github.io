@@ -1,29 +1,48 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
+import Logo from './logo'
 
-export default function Navbar() {
+const MenuToggle = () => {
   return (
-    <header>
-      <Link href="/">
-        <span className="drop-shadow-md text-Josefin text-lime-400">sasha stafford</span>
-      </Link>
-      <input
-        className="side-menu"
-        type="checkbox"
-        aria-label="open the menu"
-      />
-      <nav>
-        <ul>
-          <li>
-            <a href="/projects">projects</a>
-          </li>
-          <li>
-            <a href="/art">art</a>
-          </li>
-          <li>
-            <a href="/words">words</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <input
+      className="side-menu"
+      type="checkbox"
+      aria-label="open the menu"
+    />
+  )
+}
+
+const Menu = () => {
+  const router = useRouter()
+
+  const NavItem = ({ label, target }: {label: string; target: string;}) => {
+    return router.pathname === target ?
+      (
+        <li>{ label }</li>
+      ) :
+      (
+        <li>
+          <a href={target}>{label}</a>
+        </li>
+      )
+  }
+
+  return (
+    <nav>
+      <ul>
+        <NavItem label="projects" target="/projects" />
+        <NavItem label="art" target="/art" />
+        <NavItem label="words" target="/words" />
+      </ul>
+    </nav>
+  )
+}
+
+export default function Navbar() {  
+  return (
+    <>
+      <Logo />
+      <MenuToggle />
+      <Menu />
+    </>
   )
 }

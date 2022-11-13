@@ -7,9 +7,14 @@ module.exports = {
   ],
   staticDirs: ['../public'],
   "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-postcss",
+    "storybook-addon-next",
   ],
   "framework": "@storybook/react",
   "core": {
-    "builder": "webpack5"
+    "builder": "@storybook/builder-webpack5"
   },
 }
