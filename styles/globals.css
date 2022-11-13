@@ -23,7 +23,8 @@ html {
 
 body {
   min-height: 100%;
-  /* background: rgba(255, 0, 255, 0.3); */
+  background: rgba(255, 0, 255, 0.3);
+  font-family: "Josefin Sans", sans-serif;
   overflow-x: hidden;
 }
 

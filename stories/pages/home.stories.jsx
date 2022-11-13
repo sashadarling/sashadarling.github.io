@@ -1,5 +1,5 @@
 import Home from "../../pages/index"
-import Layout from "../../components/layout"
+import Layout from "../../components/LayoutComponent"
 
 export default {
   title: "Pages/Home",
