@@ -1,0 +1,28 @@
+.sideMenu {
+  cursor: pointer;
+  --s: 50px;
+  width: var(--s);
+  aspect-ratio: 1;
+  padding: calc(var(--s) * 0.1);
+  box-sizing: border-box;
+  background: radial-gradient(closest-side at 12.5% 25%, #000 96%, rgba(0, 0, 0, 0)) 0 0/80% 40%, linear-gradient(#000 50%, rgba(0, 0, 0, 0) 0) top/80% 40% repeat-y;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.sideMenu:checked {
+  background: radial-gradient(closest-side at 50% 12.5%, #000 96%, rgba(0, 0, 0, 0)) top/20% 80% repeat-y, radial-gradient(closest-side at 12.5% 50%, #000 96%, rgba(0, 0, 0, 0)) left/80% 20% repeat-x, conic-gradient(from 90deg at 33% 33%, rgba(0, 0, 0, 0) 90deg, #000 0) 100% 100%/60% 60% padding-box content-box;
+  transform: translateZ(0) rotate(45deg);
+}
+
+.sideMenu:checked ~ nav {
+  max-height: calc(100% - var(--header-height));
+}
+
+@media (min-width: 768px) {
+  .sideMenu {
+    display: none;
+  }
+}

@@ -1,27 +1,35 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import styles from './Menu.module.css'
+
 export default function Menu() {
   const router = useRouter()
 
-  const NavItem = ({ label, target }: {label: string; target: string;}) => {
-    return router.pathname === target ?
+  const NavItem = ({ children, href }: {children: any; href: string;}) => {
+    return router.pathname === href ?
       (
-        <li>{ label }</li>
+        <>
+          { children }
+        </>
       ) :
       (
-        <li>
-          <Link href={target}>{label}</Link>
-        </li>
+        <Link href={href}>{children}</Link>
       )
   }
 
   return (
-    <nav>
-      <ul>
-        <NavItem label="projects" target="/projects" />
-        <NavItem label="art" target="/art" />
-        <NavItem label="words" target="/words" />
+    <nav className={styles.nav}>
+      <ul className={styles.ul}>
+        <li className={styles.li}>
+          <NavItem href="/projects">projects</NavItem>
+        </li>
+        <li className={styles.li}>
+          <NavItem href="/words">words</NavItem>
+        </li>
+        <li className={styles.li}>
+          <NavItem href="/photography">photography</NavItem>
+        </li>
       </ul>
     </nav>
   )

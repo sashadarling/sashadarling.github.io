@@ -1,7 +1,9 @@
+import styles from './MenuToggle.module.css'
+
 export default function MenuToggle() {
   return (
     <input
-      className="side-menu"
+      className={styles.sideMenu}
       type="checkbox"
       aria-label="open the menu"
     />
