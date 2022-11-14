@@ -1,10 +1,13 @@
+import { StyleRegistry } from 'styled-jsx'
 import Logo from './Logo'
 import Menu from './Menu'
 import MenuToggle from './MenuToggle'
 
-export default function Navbar() {  
+import styles from '../styles/Header.module.css'
+
+export default function Header() {  
   return (
-    <header>
+    <header className={styles.header}>
       <Logo />
       <MenuToggle />
       <Menu />

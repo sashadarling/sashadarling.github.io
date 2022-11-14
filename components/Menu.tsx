@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import styles from './Menu.module.css'
+import styles from '../styles/Menu.module.css'
 
 export default function Menu() {
   const router = useRouter()

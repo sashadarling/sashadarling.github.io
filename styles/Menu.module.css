@@ -6,6 +6,11 @@ nav {
   top: 153px;
   left: 0px;
   background-color: var(--black);
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: scroll;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
 }
 
 nav a:hover {

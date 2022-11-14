@@ -1,0 +1,12 @@
+header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray);
+  color: var(--black);
+  height: var(--header-height);
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; */
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  grid-area: header;
+}
