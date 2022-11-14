@@ -44,12 +44,14 @@ ul {
   }
   
   ul {
+    height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: end;
   }
 
   li {
-    padding: 0px 30px 15px 30px;
+    padding: 0px 20px 15px 20px;
   }
 }

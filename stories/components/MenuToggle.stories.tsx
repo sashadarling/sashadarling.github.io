@@ -1,7 +1,7 @@
 import MenuToggle from '../../components/MenuToggle'
 
 export default {
-  title: "Components/Navbar",
+  title: "Components/Header",
   component: MenuToggle,
 }
 

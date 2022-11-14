@@ -1,12 +1,16 @@
 header {
-  padding: 1rem;
-  border-bottom: 1px solid var(--gray);
   color: var(--black);
   height: var(--header-height);
-  /* display: flex;
-  flex-direction: row;
+  grid-column: col-start / -1;
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
-  box-shadow: 1px 1px 5px 0px var(--gray);
-  grid-area: header;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 0px var(--gray);
+    border-bottom: 1px solid var(--gray);
+  }
 }

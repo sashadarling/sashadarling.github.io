@@ -33,12 +33,14 @@ main {
   flex-grow: 1;
   background: rgba(6, 6, 6, 0.7);
 }
+
 main .content-row {
   overflow: hidden;
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
 }
+
 main .contact-form {
   margin-top: 30px;
   padding: 50px 10px;
@@ -46,10 +48,12 @@ main .contact-form {
   background-color: var(--dark-green-transparent);
   align-items: center;
 }
+
 main .content-block {
   color: var(--white);
   margin: 20px auto 50px 30px;
 }
+
 main .content-block .content-block-body {
   padding: 1em;
   width: 85vw;
@@ -58,18 +62,10 @@ main .content-block .content-block-body {
   background-color: rgba(6, 6, 6, 0.7);
   box-shadow: 5px 5px 10px 0px var(--light-green-transparent);
 }
+
 main h1 {
   font-family: "Shrikhand", cursive;
   font-weight: bold;
   font-size: 1.5em;
-  text-shadow: 2px 2px var(--black);
-}
-
-footer {
-  padding: 1rem;
-  border-top: 1px solid var(--gray);
-  display: flex;
-  justify-content: center;
-  color: var(--white);
   text-shadow: 2px 2px var(--black);
 }
