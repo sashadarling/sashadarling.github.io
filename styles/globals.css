@@ -20,18 +20,12 @@ body {
   min-height: 100%;
   background: rgba(255, 0, 255, 0.3);
   font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
   color: var(--white);
-}
-
-main {
-  overflow: hidden;
-  flex-grow: 1;
-  background: rgba(6, 6, 6, 0.7);
 }
 
 main .content-row {

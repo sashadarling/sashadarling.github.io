@@ -1,4 +1,4 @@
-h1 {
+.h1 {
     display: inline-block;
     color: var(--light-green);
     font-size: 3rem;
@@ -7,6 +7,6 @@ h1 {
     cursor: pointer;
 }
 
-h1:hover {
+.h1:hover {
     color: var(--pink);
 }

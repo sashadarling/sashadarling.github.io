@@ -3,8 +3,9 @@
   display: grid;
   grid-template-columns: repeat(12, [col-start], 1fr);
   grid-template-rows: auto 1fr auto;
+  box-shadow: 1px 1px 5px 0px var(--gray);
 }
 
-.wrapper > * {
-  grid-column: col-start / span 12;
+.main {
+  overflow: scroll;
 }
