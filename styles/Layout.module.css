@@ -1,11 +1,23 @@
-.wrapper {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, [col-start], 1fr);
-  grid-template-rows: auto 1fr auto;
-  box-shadow: 1px 1px 5px 0px var(--gray);
+.backgroundImage {
+  object-fit: cover;
+  z-index: 0;
 }
 
 .main {
+  z-index: 99;
   overflow: scroll;
+  display: grid;
+  grid-column: col-start / -1;
+  grid-template-columns: repeat(12, [col-start], 1fr);
+}
+
+.main > * {
+  grid-column: col-start / span 12;
+}
+
+.wrapper {
+  z-index: 99;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

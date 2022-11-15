@@ -5,10 +5,13 @@
   --black: #36383f;
   --gray: #85888c;
   --pink: rgb(221, 102, 209);
+  --pink-transparent: rgba(221, 102, 209, 0.5);
   --light-pink: rgb(222, 165, 216);
   --light-green: rgb(158, 255, 158);
   --light-green-transparent: rgba(158, 255, 158, 0.7);
   --dark-green-transparent: rgba(19, 30, 19, 0.7);
+  --white-transparent: rgba(225, 225, 225, 0.5);
+  --gray-transparent: rgba(6, 6, 6, 0.7);
   --header-height: 120px;
 } 
 
@@ -18,48 +21,12 @@ html {
 
 body {
   min-height: 100%;
-  background: rgba(255, 0, 255, 0.3);
   font-family: "Josefin Sans", sans-serif;
   overflow: hidden;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
   color: var(--white);
-}
-
-main .content-row {
-  overflow: hidden;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-}
-
-main .contact-form {
-  margin-top: 30px;
-  padding: 50px 10px;
-  flex-grow: 1;
-  background-color: var(--dark-green-transparent);
-  align-items: center;
-}
-
-main .content-block {
-  color: var(--white);
-  margin: 20px auto 50px 30px;
-}
-
-main .content-block .content-block-body {
-  padding: 1em;
-  width: 85vw;
-  min-height: 400px;
-  color: var(--light-pink);
-  background-color: rgba(6, 6, 6, 0.7);
-  box-shadow: 5px 5px 10px 0px var(--light-green-transparent);
-}
-
-main h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-shadow: 2px 2px var(--black);
 }

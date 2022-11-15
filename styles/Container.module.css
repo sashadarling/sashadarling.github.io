@@ -1,0 +1,21 @@
+.section {
+    grid-column: 2 / 10;
+}
+
+.article {
+    padding: 1em;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px 0px var(--light-green-transparent);
+}
+  
+.h2 {
+    color: var(--white);
+    font-family: "Shrikhand", cursive;
+    font-size: 2em;
+    font-weight: 400;
+    text-shadow: 2px 2px var(--pink);
+}
+
+@media (min-width: 768px) {
+}

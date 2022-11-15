@@ -2,9 +2,12 @@
     display: inline-block;
     color: var(--light-green);
     font-size: 3rem;
-    margin-left: 10px;
     text-shadow: 2px 2px var(--black);
     cursor: pointer;
+    grid-column: 1 / 4;
+    height: 100%;
+    margin: 0px 10px;
+    font-weight: 400;
 }
 
 .h1:hover {
