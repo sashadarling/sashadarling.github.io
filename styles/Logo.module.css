@@ -1,14 +1,19 @@
+.a {
+    z-index: 999;
+}
+
 .h1 {
     display: inline-block;
-    color: var(--light-green);
+    color: var(--green);
     font-size: 3rem;
     text-shadow: 2px 2px var(--black);
     cursor: pointer;
     grid-column: 1 / 4;
     height: 100%;
-    margin: 0px 10px;
+    margin: 0px 20px;
     font-weight: 400;
 }
+
 
 .h1:hover {
     color: var(--pink);

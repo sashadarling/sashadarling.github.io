@@ -4,7 +4,7 @@ import styles from '../styles/Logo.module.css'
 
 export default function Logo() {
   return (
-    <Link href="/">
+    <Link href="/" className={styles.a}>
       <h1 className={styles.h1}>sasha stafford</h1>
     </Link>
   )

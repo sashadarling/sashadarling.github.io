@@ -8,11 +8,9 @@
   overflow: scroll;
   display: grid;
   grid-column: col-start / -1;
-  grid-template-columns: repeat(12, [col-start], 1fr);
-}
-
-.main > * {
-  grid-column: col-start / span 12;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 10px;
+  padding: 20px;
 }
 
 .wrapper {

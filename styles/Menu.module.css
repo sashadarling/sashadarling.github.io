@@ -15,15 +15,15 @@
 }
 
 .nav a:hover {
-  color: var(--light-pink);
+  color: var(--pink);
 }
 
 .nav a:active {
-  color: var(--light-green);
+  color: var(--green);
 }
 
 .li {
-  color: var(--light-green);
+  color: var(--green);
   display: block;
   padding: 30px;
 }

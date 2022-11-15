@@ -1,4 +1,5 @@
-import { StyleRegistry } from 'styled-jsx'
+import Image from 'next/image'
+
 import Logo from './Logo'
 import Menu from './Menu'
 import MenuToggle from './MenuToggle'

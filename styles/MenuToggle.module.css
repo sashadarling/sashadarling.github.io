@@ -10,6 +10,8 @@
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  z-index: 99;
+  margin-right: 20px;
 }
 
 .menuToggle:checked {

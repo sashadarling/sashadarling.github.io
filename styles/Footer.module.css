@@ -6,5 +6,10 @@
   color: var(--white);
   text-shadow: 2px 2px var(--black);
   z-index: 99;
-  background: var(--pink-transparent);
+  background: url('../public/images/animal-skin-pattern-leopard-2-tn-2.svg') repeat-x var(--purple);
+  position: relative;
+}
+
+.p {
+  z-index: 99;
 }

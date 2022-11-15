@@ -4,14 +4,10 @@
   --white: #f9f9f9;
   --black: #36383f;
   --gray: #85888c;
-  --pink: rgb(221, 102, 209);
-  --pink-transparent: rgba(221, 102, 209, 0.5);
-  --light-pink: rgb(222, 165, 216);
-  --light-green: rgb(158, 255, 158);
-  --light-green-transparent: rgba(158, 255, 158, 0.7);
-  --dark-green-transparent: rgba(19, 30, 19, 0.7);
-  --white-transparent: rgba(225, 225, 225, 0.5);
-  --gray-transparent: rgba(6, 6, 6, 0.7);
+  --pink: #edb1f1;
+  --green: #8ef6e4;
+  --blue: #9896f1;
+  --purple: #d59bf6;
   --header-height: 120px;
 } 
 
@@ -24,6 +20,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   overflow: hidden;
   margin: 0;
+  background-color: var(--black);
 }
 
 a {
