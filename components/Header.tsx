@@ -1,10 +1,8 @@
-import Image from 'next/image'
-
 import Logo from './Logo'
 import Menu from './Menu'
 import MenuToggle from './MenuToggle'
 
-import styles from '../styles/Header.module.css'
+import styles from '../styles/components/Header.module.css'
 
 export default function Header() {  
   return (

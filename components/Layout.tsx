@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Footer from './Footer'
 import Header from './Header'
 
-import styles from '../styles/Layout.module.css'
+import styles from '../styles/components/Layout.module.css'
 
 export default function Layout({ children }:{children:any}) {
   return (

@@ -1,4 +1,4 @@
-import styles from '../styles/MenuToggle.module.css'
+import styles from '../styles/components/MenuToggle.module.css'
 
 export default function MenuToggle() {
   return (

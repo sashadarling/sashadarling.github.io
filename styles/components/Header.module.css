@@ -9,5 +9,5 @@
   z-index: 999;
   box-shadow: 1px 1px 5px 0px var(--gray);
   border-bottom: 1px solid var(--gray);
-  background: url('../public/images/animal-skin-pattern-leopard-2-tn-2.svg') repeat-x var(--blue);
+  background: url('../../public/images/animal-skin-pattern-leopard-2-tn-2.svg') repeat-x var(--blue);
 }
