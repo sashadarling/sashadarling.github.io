@@ -1,6 +1,6 @@
 .article {
     border: 1px solid var(--gray);
-    padding: 1em;
+    padding: 1em 3em 3em 3em;
     color: var(--black);
     background-color: var(--white);
     box-shadow: 5px 5px 10px 0px var(--green);

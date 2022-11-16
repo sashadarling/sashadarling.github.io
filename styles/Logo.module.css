@@ -3,7 +3,8 @@
 }
 
 .h1 {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     color: var(--green);
     font-size: 3rem;
     text-shadow: 2px 2px var(--black);
