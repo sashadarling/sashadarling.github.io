@@ -29,9 +29,9 @@ export default function ContactForm() {
     return (
         <>
             <form className={styles.form} onSubmit={handleSubmit}>
-                <input type="text" name="name" />
-                <input type="email" name="email" />
-                <textarea name="message"></textarea>
+                <input type="text" name="name" placeholder="name" />
+                <input type="email" name="email" placeholder="email" />
+                <textarea name="message" placeholder="message"></textarea>
                 <button type="submit">Send</button>
             </form>
             <b>{formMessage}</b>
