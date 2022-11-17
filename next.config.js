@@ -7,7 +7,7 @@ const basePath = `/${repo}`
 
 const images = {
   loader: 'imgix',
-  path: 'sashadarling.imgix.net'
+  path: 'https://sashadarling.imgix.net'
 }
 
 let nextConfig = {
