@@ -2,8 +2,8 @@
 
 const isGithubActions = !!process.env.GITHUB_ACTIONS
 const repo = isGithubActions ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, '') : null
-const assetPrefix = isGithubActions ? `/${repo}` : ''
-const basePath = isGithubActions ? `/${repo}` : '' 
+const assetPrefix = `/${repo}`
+const basePath = `/${repo}` 
 
 const images = {
   loader: 'imgix',
@@ -12,11 +12,11 @@ const images = {
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  assetPrefix,
-  basePath
+  swcMinify: true
 }
 
-if (isGithubActions) nextConfig.images = images
+if (isGithubActions) {
+  nextConfig = {...nextConfig, assetPrefix, basePath, images}
+}
 
 module.exports = nextConfig
