@@ -3,8 +3,25 @@
     padding: 20px;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .form > * {
     width: 100%;
+    margin-bottom: .5em;
+}
+
+.form > input {
+    height: 3em;
+}
+
+.form > textarea {
+    height: 5em;
+}
+
+.form > button {
+    height: 3em;
+    background-color: var(--blue);
+    border-radius: .5em;
+    color: var(--white);
 }
