@@ -12,7 +12,7 @@ export default function ContactForm() {
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-        const response = await fetch('https://staging.jdstafford.com/sendinblue-relay/index.php', {
+        const response = await fetch('https://polar-plateau-40223.herokuapp.com/', {
             method: 'POST',
             body: json
         })
