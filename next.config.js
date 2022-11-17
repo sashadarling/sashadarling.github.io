@@ -5,15 +5,18 @@ const repo = isGithubActions ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, ''
 const assetPrefix = isGithubActions ? `/${repo}` : ''
 const basePath = isGithubActions ? `/${repo}` : '' 
 
+const images = {
+  loader: 'imgix',
+  path: 'sashadarling.imgix.net'
+}
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix,
-  basePath,
-  iamges: {
-    loader: 'imgix',
-    path: 'sashadarling.imgix.net'
-  }
+  basePath
 }
+
+if (isGithubActions) nextConfig.images = images
 
 module.exports = nextConfig
