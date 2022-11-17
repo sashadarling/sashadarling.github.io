@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
+
+const isGithubActions = !!process.env.GITHUB_ACTIONS
+const repo = isGithubActions ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, '') : null
+const assetPrefix = isGithubActions ? `/${repo}` : ''
+const basePath = isGithubActions ? `/${repo}` : '' 
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    loader: 'akamai',
-    path: 'static/media/'
-  },
-  assetPrefix: './'
+  assetPrefix,
+  basePath
 }
 
 module.exports = nextConfig
