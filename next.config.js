@@ -1,22 +1,7 @@
 /** @type {import('next').NextConfig} */
-
-const isGithubActions = !!process.env.GITHUB_ACTIONS
-const repo = isGithubActions ? process.env.GITHUB_REPOSITORY.replace(/.*?\//, '') : null
-const assetPrefix = `/${repo}`
-const basePath = `/${repo}` 
-
-const images = {
-  loader: 'imgix',
-  path: 'https://sashadarling.imgix.net'
-}
-
-let nextConfig = {
+const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true
-}
-
-if (isGithubActions) {
-  nextConfig = {...nextConfig, assetPrefix, basePath, images}
+  swcMinify: true,
 }
 
 module.exports = nextConfig

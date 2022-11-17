@@ -11,6 +11,8 @@
   grid-template-columns: repeat(12, 1fr);
   row-gap: 10px;
   padding: 3em 0;
+  background: url('/images/IMG_1713.jpeg') no-repeat center;
+  background-size: cover;
 }
 
 .main > section {
