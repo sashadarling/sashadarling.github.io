@@ -3,8 +3,15 @@
 }
 
 .profileImg {
-    width: 15em;
-    height: 15em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--purple);
+}
+
+@media (min-width: 768px) {
+    .profileImg {
+        width: 15em;
+        height: 15em;
+    }
 }
