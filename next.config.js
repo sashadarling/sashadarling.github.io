@@ -9,7 +9,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix,
-  basePath
+  basePath,
+  iamges: {
+    loader: 'imgix',
+    path: 'sashadarling.imgix.net'
+  }
 }
 
 module.exports = nextConfig
