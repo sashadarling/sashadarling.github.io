@@ -5,6 +5,12 @@
     background-color: var(--white);
     box-shadow: 5px 5px 10px 0px var(--green);
 }
+
+.articleBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
   
 .h2 {
     color: var(--pink);

@@ -4,7 +4,9 @@ export default function Container({ children, title }:{children: any, title: str
     return (
         <article className={styles.article}>
             <h2 className={styles.h2}>{title}</h2>
-            {children}
+            <div className={styles.articleBody}>
+                {children}
+            </div>
         </article>
     )
 }
