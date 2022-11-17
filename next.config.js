@@ -10,7 +10,7 @@ const images = {
   path: 'sashadarling.imgix.net'
 }
 
-const nextConfig = {
+let nextConfig = {
   reactStrictMode: true,
   swcMinify: true
 }
